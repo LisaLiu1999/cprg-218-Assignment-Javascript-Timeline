@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sigmar+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: League Spartan, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6;
+   
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Sigmar One', Arial, sans-serif;
+    background-color: #d7bfae;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0 auto;
+}
+
+
+#pagetitle {
+    font-size: 2rem;
+    color: #5a3921;
+    margin: 0; 
+    padding: 20px;
+   
+}
+
+.timeline {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    font-family: League Spartan, Arial, sans-serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: #5a3921;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #d7bfae;
+    color: #2e1807;
+    text-decoration: underline;
+    font-weight: 700;
+    
+}
+#info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #39332f;
+   
+}
+.info-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%; 
+}
+.info-content img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+}
+.text{
+    text-align: center;
+    padding: 30px;
+}
+.text h2 {
+    text-shadow: 5px 2px 2px  #1c1c1c;
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+    color: #fcd4b8;
+}
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+    .button-clicked {
+        background-color: #c76825;
+    }
+    
+ .footercontainer {
+    max-width: 100%;
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+ }
+footer {
+    
+    background-color: #d7bfae;
+    color: #2e1807;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    line-height: 2;
+
+}
+.socialmedia ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+    margin: 0; 
+    gap: 1rem;
+
+}
+.socialmedia li {
+    margin-left: 20px;
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    #pagetitle {
+        font-size: 1.6rem;   
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .text h2 {
+        font-size: 1.4rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+    .info-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info-content img {
+        padding: 20px;
+
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+
+    #pagetitle {
+        font-size: 1.2rem;
+    }
+
+    .timeline {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 12px 5px;
+        margin-bottom: 10px;
+    }
+
+    #info-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-content img {
+        max-width: 100%; 
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+    .footercontainer {
+        flex-direction: column;
+        align-items: center;
+}
+.socialmedia ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia li {
+    margin-left: 10px;
+}
+}
